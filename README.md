@@ -12,6 +12,7 @@ Both transmitter and receiver have graphical user interfaces (GUI) built using T
 
 This project demonstrates how low-level networking concepts can be used to build a WhatsApp-like image sharing protocol at the system level.
 
+
 📖 Introduction
 
 In modern digital communication, real-time image transmission plays an important role in messaging, surveillance, satellite communication, and remote sensing.
@@ -32,6 +33,8 @@ Real-time reconstruction with missing frame handling.
 GUI interfaces for interactive visualization and control.
 
 Extensible modular design for future use in satellite and mobile communication.
+
+
 
 ✨ Key Features
 🔹 Transmitter Module
@@ -57,6 +60,8 @@ Continuous Mode – real-time streaming by sending frames continuously.
  <img width="608" height="403" alt="image" src="https://github.com/user-attachments/assets/9925dfbc-f079-46ee-9710-06f23e5b4585" />
 
 
+
+
 GUI Features:
 
 Live camera preview
@@ -66,6 +71,7 @@ Frame size adjustment (80–100 bytes)
 Transmission progress bar
 
 Real-time logs of sent frames
+
 
 🔹 Receiver Module
 
@@ -77,6 +83,7 @@ Detects missing frames and replaces them with black placeholders.
 
 Reconstructs full image using OpenCV.
 
+
 GUI Features:
 
 Live preview of last received image
@@ -87,9 +94,11 @@ Transmission statistics (frames received, missing frames, total size)
 
 Logs and alerts for errors or missing data
 
+
 🛠️ Tools & Technologies
 
 Language: Python 3.10+
+
 
 Libraries:
 
@@ -108,6 +117,7 @@ Extra Modules: threading & multiprocessing (smooth performance)
 Hardware Used: Webcam (USB), LAN/Wi-Fi connection
 
 IDE: Visual Studio Code
+
 
 🏗️ System Architecture
 Transmitter Workflow
@@ -148,6 +158,8 @@ Reconstruct full image using OpenCV.
 
 Display reconstructed image in GUI and store in organized folders.
 
+
+
 📊 Experimental Results
 
 Average Transmission Time: ~2.3 seconds per image (Wi-Fi)
@@ -164,6 +176,8 @@ Auto Modes: Timer and continuous modes worked smoothly without errors.
 
 This shows the system can reliably transmit images over LAN even with packet/frame loss.
 
+
+
 ⚠️ Challenges & Limitations
 
 Frame Loss: Network delays may drop frames; handled with placeholders but not perfect.
@@ -175,6 +189,8 @@ Still Images Only: No live video streaming yet.
 GUI Performance: May slow with too many images in history.
 
 Static IP Requirement: Currently designed for LAN only.
+
+
 
 🔮 Future Enhancements
 
@@ -189,6 +205,8 @@ Add mobile app for remote access.
 Replace TCP with WebSocket / MQTT protocols for IoT integration.
 
 Optimize system for satellite and underwater communication with frame size between 55–110 bytes.
+
+
 
 📥 Installation
 
@@ -213,6 +231,8 @@ Opens GUI
 
 Capture/send images in manual, timer, or continuous mode
 
+
+
 📌 Applications
 
 WhatsApp-like image transfer at protocol level
@@ -225,6 +245,8 @@ Underwater monitoring and exploration
 
 Offline image sharing in low-bandwidth environments
 
+
+
 💻GUI Ouput
 
 Transmitter:
@@ -234,6 +256,7 @@ Transmitter:
 Receiver:
 
 <img width="837" height="433" alt="image" src="https://github.com/user-attachments/assets/8de089ca-3044-4e70-b471-08ed093e7c8e" />
+
 
 👨‍💻 Author
 
